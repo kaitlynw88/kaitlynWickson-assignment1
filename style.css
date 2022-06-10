@@ -18,14 +18,22 @@ h1, h2, h3, button{
     text-transform: uppercase;
     margin:0;
 }
-h4, li, a, p{
+h4, li, a, p, form{
     font-family: 'Montserrat', sans-serif;
     margin:0;
 }
 i {
     font-size: 2rem;
 }
-p{
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+p,label{
     font-size:1rem ;
 }
 ul{
@@ -53,6 +61,7 @@ button{
     font-size: 1rem;
     line-height:29px;
     width:200px;
+    border:none;
 }
 
 /* header */
@@ -65,12 +74,13 @@ header{
 
 .headerInfo{
     display: flex;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
     padding:0;
+    height: 100%;
 }
 
-.headerInfo nav ul{
+nav ul{
     display:flex;
     justify-content:space-evenly;
     width:70vw;
@@ -83,12 +93,14 @@ header{
     display:flex;
     flex-direction: column;
     align-items: center;
+
 }
 h1, h1 span{
     font-size:4rem;
     text-align: center;
     padding:0;
 }
+
 h4{
     font-size: 1.75rem;
     background-color: #9200ff;
@@ -97,6 +109,10 @@ h4{
 
 /* performing Gallery */
 
+.performing{
+    background-color: #0f0632;
+}
+
 .gallery {
     display:flex;
     flex-wrap: wrap;
@@ -104,22 +120,17 @@ h4{
 
 .gallery div{
     width:50%;
-    border:2px solid green;
 }
 .gallery img{
     object-fit: cover;
 }
 
 .galleryText {
-    background-color: #3d0369;
+    background-color: #0f0632;
     padding:20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-h2{
-    font-size:2.6rem;
 }
 /* get your tickets styles */
 
@@ -146,7 +157,7 @@ h2{
 
 /* links styles */
 .ourLinks{
-    background-color: #9200ff;
+    background-color: #3D0369;
 }
 .links{
     display:flex;
@@ -166,14 +177,63 @@ h2{
 .theGram {
     background-color: #08080b;
     text-align: center;
+    padding-top:40px;
 }
 
 .theGram ul{
     display: flex;
     justify-content: center;
+    margin:0;
 }
 
 .theGram ul li{
     width:calc(100% / 3);
-    margin:20px;
+    padding: 40px 10px;
+}
+
+/* footer styles */
+
+h3{
+
+}
+footer{
+    background-color: #3D0369;
+    height:40vh;
+    display:flex;
+    align-items: space-between;
+}
+/* .footerInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border:2px solid yellow;
+    height:100%;
+} */
+
+footer nav ul{
+    margin:0;
+    padding:20px 0 0 20px;
+    margin-bottom:50px;
+}
+
+.ourInfo{
+    display: flex;
+    align-items:center;
+    border:2px solid green;
+}
+
+.contact, .updates{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.updates form{
+    width:100%;
+    display:flex;
+}
+form input{
+    width:60%;
+    color:grey;
+    font-size:1rem;
 }
