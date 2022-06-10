@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>kaitlynWickson-assignment1</title>
+    <script src="https://kit.fontawesome.com/54349bb51e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceberg&family=Josefin+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper headerInfo">
             <nav>
                 <ul>
                     <li><a href="#">home</a></li>
@@ -18,9 +24,11 @@
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
-
-            <h1>Thunder force stadium</h1>
-            <button>presented by hot cops</button>
+            <div class="titleInfo">
+                <h1>Thunder <span>force</span> stadium</h1>
+                <h4>presented by hot cops</h4>
+            </div>
+            
         </div>
         <!-- wrapper Ends -->
         
@@ -28,33 +36,34 @@
     <main>
         <section class="performing">
             <div class="wrapper">
-                <ul>
-                    <li>
+                <div class="gallery">
+
+                    <div class="galleryText">
                         <h2>performing line up</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum consequuntur minima repellendus neque quasi doloremque, id ipsum, accusamus cupiditate provident maiores iusto nobis dolor quam enim? Repudiandae, veniam rem.</p>
 
                         <button>read more</button>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <img src="./assets/image-2_2@2x.png" alt="man singing into microphone">
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <img src="./assets/image-2-copy@2x.png" alt="close up of a saxaphone">
-                    </li>
+                    </div>
 
-                    <li>
+                    <div class="galleryText">
                         <h2>performing line up</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat aspernatur ad commodi laudantium soluta eligendi quod illum iste, delectus corporis magni itaque voluptatibus dolorum exercitationem hic eaque perferendis repellendus.</p>
 
                         <button>read more</button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- wrapper Ends -->  
         </section>
 
         <section class="getYourTickets">
-            <div class="wrapper">
+            <div class="wrapper ticketContainer">
                 <div class="imageContainer">
                     <img src="./assets/image-6@2x.png" alt="concert in red lights with fog">
                 </div>
@@ -70,19 +79,30 @@
             <!-- wrapper Ends -->
         </section>
 
-        <section class="widgets">
+        <section class="ourLinks">
             <div class="wrapper">
-                <ul>
-                    <li>location</li>
-                    <li>tickets</li>
-                    <li>reach out</li>
-                </ul>
+                <div class="links">
+                    <div>
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <a href="#">location</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ticket"></i>
+                        <a href="#">tickets</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <a href="#">reach out</a>
+                    </div>
+
+                </div>
             </div>
             <!-- wrapper ends -->
         </section>
 
         <section class="theGram">
             <div class="wrapper">
+                <h2>The gram</h2>
                 <ul>
                     <li>
                         <img src="./assets/image-2@2x.png" alt="full stadium with bright shining lights">

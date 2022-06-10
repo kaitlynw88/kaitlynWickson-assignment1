@@ -6,10 +6,174 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-ul {
+/* general styles */
+
+* {
+    color: #fff;
+    font-size: 125%;
+}
+
+h1, h2, h3, button{
+    font-family: 'Iceberg', cursive;
+    text-transform: uppercase;
+    margin:0;
+}
+h4, li, a, p{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+i {
+    font-size: 2rem;
+}
+p{
+    font-size:1rem ;
+}
+ul{
     list-style: none;
 }
 
-body {
-    background: grey;
+img{
+    width:100%;
+    display: block;
+}
+
+.wrapper{
+    max-width: 1280px;
+    width:90%;
+    margin:0 auto;
+}
+
+span{
+    display:block;
+}
+
+button{
+    background-color:#9200ff;
+    text-align:center;
+    font-size: 1rem;
+    line-height:29px;
+    width:200px;
+}
+
+/* header */
+header{
+    background: url(./assets/image-1.png);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+
+.headerInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0;
+}
+
+.headerInfo nav ul{
+    display:flex;
+    justify-content:space-evenly;
+    width:70vw;
+    margin-bottom:80px;
+    font-size:1rem;
+}
+
+
+.titleInfo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h1 span{
+    font-size:4rem;
+    text-align: center;
+    padding:0;
+}
+h4{
+    font-size: 1.75rem;
+    background-color: #9200ff;
+    padding:20px;
+}
+
+/* performing Gallery */
+
+.gallery {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.gallery div{
+    width:50%;
+    border:2px solid green;
+}
+.gallery img{
+    object-fit: cover;
+}
+
+.galleryText {
+    background-color: #3d0369;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2{
+    font-size:2.6rem;
+}
+/* get your tickets styles */
+
+.getYourTickets {
+    background:#08080b;
+}
+
+.ticketContainer{
+    display:flex;
+    padding: 50px 0;
+}
+
+.imageContainer{
+    width:45%;
+    padding-right: 20px;
+}
+
+.textContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-right:100px;
+}
+
+/* links styles */
+.ourLinks{
+    background-color: #9200ff;
+}
+.links{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding:60px 0;
+}
+
+.links div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* the gram */
+
+.theGram {
+    background-color: #08080b;
+    text-align: center;
+}
+
+.theGram ul{
+    display: flex;
+    justify-content: center;
+}
+
+.theGram ul li{
+    width:calc(100% / 3);
+    margin:20px;
 }
