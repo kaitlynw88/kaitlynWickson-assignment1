@@ -10,7 +10,7 @@ html { box-sizing: border-box;}
 
 * {
     color: #fff;
-    font-size: 125%;
+    font-size: 125%;        
 }
 
 h1, h2, h3, button{
@@ -62,7 +62,7 @@ button{
     text-align:center;
     font-size: 1rem;
     line-height:29px;
-    width:200px;
+    width:180px;
     border:none;
 }
 
@@ -77,24 +77,30 @@ header{
 .headerInfo{
     display: flex;
     align-items:center;
+    position: relative;
     flex-direction: column;
     padding:0;
     height: 100%;
 }
 
-.navDir ul{
+.siteDir ul{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-bottom:80px;
-    border:2px solid yellow;
-    flex-basis: auto;
+    flex-basis:70%;
     font-size:1rem;
+}
+.siteDir ul li{
+    padding: 20px 40px;
 }
 
 .navSocial ul{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position:absolute;
+    right:0;
+    top:0;
 }
 
 
@@ -150,18 +156,21 @@ h4{
 
 .ticketContainer{
     display:flex;
+    flex-wrap: wrap;
     padding: 50px 0;
 }
 
 .imageContainer{
-    width:60%;
+    width:40%;
     padding-right: 20px;
+    margin:0 auto;
 }
 
 .textContainer{
     display:flex;
     flex-direction: column;
-    justify-content:space-between;
+    width:60%;
+    justify-content:center;
     padding-right:100px;
 }
 
@@ -180,6 +189,11 @@ h4{
     display:flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 60%;
+}
+
+.links a{
+    padding-top:20px;
 }
 
 /* the gram */
@@ -195,11 +209,12 @@ h4{
     justify-content: center;
     align-items: center;
     margin:0;
+    padding:0;
 }
 
 .theGram ul li{
-    width:calc(100% / 3);
-    padding: 40px 10px;
+    flex-basis:30%;
+    padding: 20px 10px;
 }
 
 /* footer styles */
@@ -216,30 +231,23 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border:2px solid yellow;
     height:50vh;
 }
 
-footer nav ul {
+.footerDir nav ul {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 80px;
-    border: 2px solid yellow;
-    flex-basis: auto;
+    margin-bottom: 40px;
+    flex-basis: 60%;
     font-size: 1rem;
-}
-
-footer nav ul{
-    margin:0;
-    padding:20px 0 0 20px;
-    margin-bottom:50px;
+    padding-right:0;
 }
 
 .ourInfo{
     display: flex;
     align-items:center;
-    border:2px solid green;
     width: 100%;
+    padding-bottom:40px;
 }
 
 .contact, .updates{
@@ -263,37 +271,56 @@ form input{
     text-align: center;
 }
 
-@media(max-width: 600px){
+/* media styles for tablet AND phone */
+
+@media(max-width: 850px){
     *{
         font-size: 100%;
     }
-
-    header ul{
+    /* header styles */
+    .siteDir ul, .navSocial ul{
         display: none;
     }
-
+    /* Performing Line up styles */
     .gallery{
         flex-direction: column;
     }   
     .gallery div{
         width:100%;
     } 
+    /* Get your ticket styles */
     .imageContainer,.textContainer{
         width:100%;
     }
-
+    .imageContainer, .textContainer{
+        padding:0;
+    }
+    /* link styles */
     .links{
         flex-direction: column;
     }
-    
+
+    .links a{
+        padding-bottom:20px;
+    }
+    /* the gram styles */
     .theGram ul{
         flex-direction: column;
     }
     .theGram ul li{
         width:100%;
+        padding-bottom:0;
     }
+    /* footer styles */
     .ourInfo{
         flex-direction: column;
     }
 
+    .contact, .updates{
+        width: 100%;
+    }
+
+    .contact{
+        padding-bottom: 30px;
+    }
 }
